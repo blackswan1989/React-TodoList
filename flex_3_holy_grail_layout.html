@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      /* body {
+        height: 100vh;
+      } */
+      /* container display : flex를 선언하면 세로에서 가로로 보여지게 만들어 준다. */
+      .container {
+        display: flex;
+        /* column 을 추가로 선언하면 세로로 차곡차곡 쌓이는 형태가 된다. */
+        flex-direction: column;
+      }
+      header {
+        /* border-bottom : header 아래쪽에 줄을 만들어 준다.*/
+        border-bottom: 1px solid gray;
+        padding-left: 20px;
+      }
+
+      footer {
+        border-top: 1px solid gray;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .content {
+        display: flex;
+      }
+
+      .content nav {
+        border-right: 1px solid gray;
+      }
+
+      .content aside {
+        border-left: 1px solid gray;
+      }
+
+      nav,
+      aside {
+        flex-basis: 150px;
+        /* nav와 aside만 shrink값을 0을 주게 되면 창을 줄여도 박스가 작아지지 않게 된다. 즉 현재 값을 주지 않은 main 박스만 창을 줄일 때 함께 줄어들게 할 수 있다. */
+        flex-shrink: 0;
+      }
+
+      main {
+        padding: 10px;
+      }
+
+      aside {
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>생활코딩</h1>
+      </header>
+
+      <section class="content">
+        <nav>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+        </nav>
+        <main>
+          main : 생활코딩은 일반인을 위한 코딩 수업입니다.
+        </main>
+        <aside>
+          aside : AD
+        </aside>
+      </section>
+
+      <footer>
+        <a href="https://www.youtube.com/watch?v=8DJBCHro-3Q"
+          >footer : 홈페이지</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>

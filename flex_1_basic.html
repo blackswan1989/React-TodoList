@@ -1,0 +1,57 @@
+<!--flex1~3의 내용은 생활코딩 인강을 토대로 작성함. https://opentutorials.org/module/2367/13526 -->
+
+<html>
+  <meta charset="utf-8" />
+  <!-- flex는 엘리먼트들의 크기나 위치를 쉽게 잡아주는 도구이다. flex를 이용하여 레이아웃을 효과적으로 표현할 수 있다.
+    
+    <container>
+      <item></item>
+      <item></item>
+    </container> 
+  
+    ** container 속성 **
+    1. display
+    2. flex-direction
+    3. flex-wrap
+    4. flex-flow
+    5. justify-content
+    6. align-items
+    7. align-content
+  
+    ** item 속성 **
+    1. order
+    2. flex-grow
+    3. flex-shrink
+    4. fkex-basis
+    5. flex
+    6. align-self
+  -->
+  <head>
+    <style>
+      .container {
+        background-color: powderblue;
+        height: 200px;
+        /* flex값을 주면 블럭이 설정된다 */
+        display: flex;
+        /* 반대쪽으로 정렬시켜준다 */
+        flex-direction: row-reverse;
+        /* 컬러의 방향으로 정렬시켜준다 */
+        flex-direction: column-reverse;
+      }
+      .item {
+        background-color: tomato;
+        color: white;
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>
