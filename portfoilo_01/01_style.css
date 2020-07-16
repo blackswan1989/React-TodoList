@@ -1,11 +1,9 @@
-/* 구글 웹 폰트 적용방법 https://blog.naver.com/ksseo63/221972693960 */
+
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
-/* 웹 폰트 지정 */
 .ng-font {
   font-family: "Nanum Gothic", 돋움;
 }
 
-/* 페이지 레이아웃 https://mainia.tistory.com/4210 */
 .content {
   display: flex;
 }
@@ -93,9 +91,9 @@ aside {
   color: lightgrey;
   font-size: 1rem;
   margin: 0;
+  transition: all 1s ease-in-out;
 }
-/* html 자동줄바꿈, 긴글줄이기 참조 사이트
-https://m.blog.naver.com/PostView.nhn?blogId=yhj0781&logNo=50170458458&proxyReferer=https:%2F%2Fwww.google.com%2F */
+
 .aside {
   display: flex;
   margin: 0;
